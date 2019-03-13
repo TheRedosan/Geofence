@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoActivity">
+
+    <TextView
+        android:id="@+id/tvCiudad"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TEXTOOO"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvDireccion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvDireccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="230dp"
+        android:text="cALELLKF SGSGF"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/btDesactivar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCiudad" />
+
+    <Button
+        android:id="@+id/btBorrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginEnd="9dp"
+        android:text="Borrar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btDesactivar"
+        app:layout_constraintEnd_toStartOf="@+id/btDesactivar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btDesactivar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="66dp"
+        android:text="Desactivar"
+        app:layout_constraintBottom_toTopOf="@+id/tvGeo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btBorrar"
+        app:layout_constraintTop_toBottomOf="@+id/tvDireccion" />
+
+    <Button
+        android:id="@+id/btFijar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="157dp"
+        android:text="FIJAR DISNTANCIA"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etRadio" />
+
+    <TextView
+        android:id="@+id/tvGeo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="18dp"
+        android:text="Geofence"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvRadio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btDesactivar" />
+
+    <TextView
+        android:id="@+id/tvRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Radio de aviso"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/etRadio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvGeo" />
+
+    <EditText
+        android:id="@+id/etRadio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="79dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btFijar"
+        app:layout_constraintStart_toStartOf="@+id/tvRadio"
+        app:layout_constraintTop_toBottomOf="@+id/tvRadio" />
+
+
+</android.support.constraint.ConstraintLayout>
