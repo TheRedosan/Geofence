@@ -54,4 +54,6 @@ public class InfoActivity extends AppCompatActivity {
         btFijar = findViewById(R.id.btFijar);
         etRadio = findViewById(R.id.etRadio);
     }
+
+
 }
